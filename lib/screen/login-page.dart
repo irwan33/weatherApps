@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:weather_apps/palatte.dart';
 import '../widgets/widgets.dart';
+import '../screen/bottom-body.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -13,7 +14,8 @@ class LoginPage extends StatelessWidget {
         Scaffold(
           backgroundColor: Colors.transparent,
           body: SingleChildScrollView(
-            padding: const EdgeInsets.symmetric(vertical: 100),
+            physics: const NeverScrollableScrollPhysics(),
+            padding: const EdgeInsets.symmetric(vertical: 20),
             child: SafeArea(
               child: Column(
                 children: [
@@ -60,8 +62,13 @@ class LoginPage extends StatelessWidget {
               ),
             ),
           ),
+          bottomNavigationBar: BottomAppBar(
+            color: Color.fromARGB(0, 0, 0, 0),
+            child: BottomBody(),
+          ),
         ),
       ],
     );
   }
 }
+

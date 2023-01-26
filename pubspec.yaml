@@ -64,8 +64,11 @@ flutter:
   assets:
      - images/background.png
      - images/House.png
-     - images/modal.png
-     - images/Rectangle2.png
+     - images/bottom-sheet-menu.png
+     - images/button-bar.png
+     - images/hamburger-btn.png
+     - images/map-pin.png
+     - images/rectangle-menu.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

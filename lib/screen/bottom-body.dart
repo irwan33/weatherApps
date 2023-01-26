@@ -11,15 +11,10 @@ class BottomBody extends StatelessWidget {
           topLeft: Radius.circular(40.0),
           topRight: Radius.circular(40.0),
         ),
-        child: Container(
-            height: 310,
-            width: double.maxFinite,
-            color: Colors.transparent,
-          child: Image.asset(
-            'images/Rectangle2.png',
-            fit: BoxFit.cover,
-          ),
-        ),
+      child: Image.asset(
+        'images/bottom-sheet-menu.png',
+        fit: BoxFit.cover,
+      ),
     );
   }
 }

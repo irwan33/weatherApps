@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class BottomBody extends StatelessWidget {
@@ -5,15 +6,17 @@ class BottomBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return  ClipRRect(
-        borderRadius: const BorderRadius.only(
-          topLeft: Radius.circular(40.0),
-          topRight: Radius.circular(40.0),
+    return Positioned(
+      left: 0,
+      right: 0,
+      bottom: 0,
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.white.withOpacity(0.5),
+          shape: BoxShape.rectangle,
+          borderRadius: BorderRadius.only(topLeft: Radius.circular(30), topRight: Radius.circular(30),),
         ),
-      child: Image.asset(
-        'images/bottom-sheet-menu.png',
-        fit: BoxFit.cover,
+        height: 300.0,
       ),
     );
   }

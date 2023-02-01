@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:weather_apps/screen/bottom-body.dart';
 import 'package:weather_apps/screen/content-body.dart';
+import 'package:weather_apps/screen/gradient-view.dart';
 import '../widgets/widgets.dart';
 
 class LoginPage extends StatelessWidget {
@@ -16,6 +17,7 @@ class LoginPage extends StatelessWidget {
               child: new BackgroundImage()
           ),
           new ContentBody(),
+          new GradientView(),
           new BottomBody(),
         ],
       )

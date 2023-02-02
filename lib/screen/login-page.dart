@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:weather_apps/screen/bottom-body.dart';
 import 'package:weather_apps/screen/content-body.dart';
 import 'package:weather_apps/screen/gradient-view.dart';
+import 'package:weather_apps/screen/bottom-navbar.dart';
 import '../widgets/widgets.dart';
 
 class LoginPage extends StatelessWidget {
@@ -19,8 +20,9 @@ class LoginPage extends StatelessWidget {
           new ContentBody(),
           new GradientView(),
           new BottomBody(),
+          new BottomNavbar()
         ],
-      )
+      ),
     );
   }
 }

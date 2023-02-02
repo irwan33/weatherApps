@@ -16,3 +16,8 @@ const TextStyle kDescText = TextStyle(
   fontSize: 15,
   color: Colors.white,
 );
+
+const TextStyle kListText = TextStyle(
+  fontSize: 13,
+  color: Colors.white,
+);

@@ -37,19 +37,19 @@ class ContentBody extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-    Container(
-      height: 390.0,
-      width: 390.0,
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage(
-              'images/House.png'),
-              fit: BoxFit.fill,
-        ),
+        Container(
+          height: 390.0,
+          width: 390.0,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+              image: AssetImage(
+                  'images/House.png'),
+                fit: BoxFit.fill,
+            ),
         shape: BoxShape.circle,
-      ),
-    ),
-      ],
+            ),
+        ),
+        ],
       ),
     );
   }

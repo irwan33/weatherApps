@@ -1,6 +1,6 @@
 # weather_apps
 
-A new Flutter project.
+A new Flutter project UI base on - [figma Weather-App-Design-(Community)](https://www.figma.com/file/bFHMx9ibuHIyvbvKHW3JqD/Weather-App-Design-(Community)?node-id=3%3A271&t=RQeBf9pl35lWNH4o-0.)
 
 ## Getting Started
 

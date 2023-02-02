@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'bottom-center.dart';
-
 class BottomNavbar extends StatelessWidget {
   const BottomNavbar({super.key});
 
@@ -35,7 +33,7 @@ class BottomNavbar extends StatelessWidget {
               Expanded(
                 flex: 1,
                 child: Container(
-                  padding:const EdgeInsets.only(left: 20, top: 10),
+                  padding:const EdgeInsets.only(left: 20, top: 20),
                   child: IconButton(
                       onPressed: () {
                         setState();
@@ -51,12 +49,12 @@ class BottomNavbar extends StatelessWidget {
                       setState();
                     },
                     icon: Image.asset("images/bottom-center.png"),
-                    iconSize: 90.0),
+                    iconSize: 100.0),
               ),
               Expanded(
                 flex: 1,
                 child: Container(
-                  padding:const EdgeInsets.only(right: 20, top: 10),
+                  padding:const EdgeInsets.only(right: 20, top: 20),
                   child: IconButton(
                       onPressed: () {
                         setState();

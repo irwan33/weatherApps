@@ -10,17 +10,17 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      body: new Stack(
+    return Scaffold(
+      body: Stack(
         children: <Widget>[
-          new ConstrainedBox(
+          ConstrainedBox(
               constraints: const BoxConstraints.expand(),
-              child: new BackgroundImage()
+              child: BackgroundImage()
           ),
-          new ContentBody(),
-          new GradientView(),
-          new BottomBody(),
-          new BottomNavbar()
+          ContentBody(),
+          GradientView(),
+          BottomBody(),
+          BottomNavbar()
         ],
       ),
     );

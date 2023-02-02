@@ -5,25 +5,69 @@ import 'bottom-center.dart';
 class BottomNavbar extends StatelessWidget {
   const BottomNavbar({super.key});
 
+  void setState() {
+    print("Button Press");
+  }
+
   @override
   Widget build(BuildContext context) {
     return Positioned(
+      bottom: 0,
       left: 0,
       right: 0,
-      bottom: 0,
-      child: ClipRect(
-          child: Container(
-            height: 90.0,
-            width: double.maxFinite,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(
-                    'images/rectangle-menu.png'),
-                fit: BoxFit.fill,
+      child: Stack(
+        alignment: Alignment.bottomCenter,
+        children: [
+          ClipRect(
+            child: Container(
+              height: 90.0,
+              width: double.maxFinite,
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('images/rectangle-menu.png'),
+                  fit: BoxFit.fill,
+                ),
               ),
             ),
-            child: BottomCenterNavbar(),
           ),
+          Row(
+            children: [
+              Expanded(
+                flex: 1,
+                child: Container(
+                  padding:const EdgeInsets.only(left: 20, top: 10),
+                  child: IconButton(
+                      onPressed: () {
+                        setState();
+                      },
+                      icon: Image.asset("images/map-pin.png"),
+                      iconSize: 30.0),
+                ),
+              ),
+              Expanded(
+                flex: 4,
+                child: IconButton(
+                    onPressed: () {
+                      setState();
+                    },
+                    icon: Image.asset("images/bottom-center.png"),
+                    iconSize: 90.0),
+              ),
+              Expanded(
+                flex: 1,
+                child: Container(
+                  padding:const EdgeInsets.only(right: 20, top: 10),
+                  child: IconButton(
+                      onPressed: () {
+                        setState();
+                      },
+                      icon: Image.asset("images/hamburger-btn.png"),
+                      iconSize: 30.0),
+                ),
+              ),
+            ],
+          )
+        ],
       ),
     );
   }

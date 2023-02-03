@@ -1,7 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:weather_apps/screen/weather-list.dart';
-import '../widgets/hex-color.dart';
+import 'package:weather_apps/screen/home/weather-list.dart';
+import '../../widgets/hex-color.dart';
 
 class BottomBody extends StatelessWidget {
   const BottomBody({super.key});

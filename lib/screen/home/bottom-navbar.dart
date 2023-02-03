@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather_apps/screen/detail-screen/weather-detail.dart';
 
 class BottomNavbar extends StatelessWidget {
   const BottomNavbar({super.key});
@@ -56,8 +57,11 @@ class BottomNavbar extends StatelessWidget {
                 child: Container(
                   padding:const EdgeInsets.only(right: 20, top: 20),
                   child: IconButton(
-                      onPressed: () {
-                        setState();
+                      onPressed:  () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const WeatherDetail()),
+                        );
                       },
                       icon: Image.asset("images/hamburger-btn.png"),
                       iconSize: 30.0),

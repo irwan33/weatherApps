@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../palatte.dart';
+import '../../palatte.dart';
 
 class ContentBody extends StatelessWidget {
   const ContentBody({super.key});

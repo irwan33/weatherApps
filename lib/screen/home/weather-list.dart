@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../palatte.dart';
-import '../widgets/hex-color.dart';
+import '../../palatte.dart';
+import '../../widgets/hex-color.dart';
 
 void main() {
   runApp(new MaterialApp(home: new WeatherList()));

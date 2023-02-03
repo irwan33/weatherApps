@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:weather_apps/screen/login-page.dart';
+import 'package:weather_apps/screen/home/home-page.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         textTheme:
         GoogleFonts.latoTextTheme(Theme.of(context).textTheme),
       ),
-      home: LoginPage(),
+      home: HomePage(),
     );
   }
 }

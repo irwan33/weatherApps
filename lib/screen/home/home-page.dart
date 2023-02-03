@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:weather_apps/screen/bottom-body.dart';
-import 'package:weather_apps/screen/content-body.dart';
-import 'package:weather_apps/screen/gradient-view.dart';
-import 'package:weather_apps/screen/bottom-navbar.dart';
-import '../widgets/widgets.dart';
+import 'package:weather_apps/screen/home/bottom-body.dart';
+import 'package:weather_apps/screen/home/content-body.dart';
+import 'package:weather_apps/screen/home/gradient-view.dart';
+import 'package:weather_apps/screen/home/bottom-navbar.dart';
+import '../../widgets/widgets.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
